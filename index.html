@@ -9,12 +9,17 @@
 </head>
 <body>
     <div class="container">
-        <h1> R I</h1>
-        <section>
-            <h2> Some image different size</h2>
-            <img src="http://via.placeholder.com/640x400" alt="placeholder img">
-        </section>
+      <h1>Responsive Images</h1>
+      <section>
+        <h2>Same image different size</h2>
+        <img srcset="
+            https://via.placeholder.com/320x320 320w,
+            https://via.placeholder.com/640x400 640w,
+            https://via.placeholder.com/1024x600 1024w" sizes="
+            (max-width: 320px) 320px,
+            (max-width: 640px) 640px,
+            (max-width: 1024px) 1024px" src="https://via.placeholder.com/640x400" alt="placeholder image">
+      </section>
     </div>
-    
-</body>
+  </body>
 </html>
